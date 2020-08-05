@@ -19,7 +19,14 @@
     {{/if}}
   </ul>
 </nav>
-
+{{#each songs}}
+{{this.title}}
+{{this.description}}
+{{this.artist}}
+<audio controls>
+  <source src="{{this.song}}" type='audio/mpeg'>
+</audio>
+{{/each}}
 
 
     {{>navbar}}
