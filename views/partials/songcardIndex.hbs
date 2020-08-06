@@ -11,6 +11,7 @@
     <p class="quote-card__description">{{this.description}}</p>
     <div>
     <p class="quote-card__artist">{{this.artist}}</p>
+    <audio controls>
     <source src="{{this.song}}" type='audio/mpeg'>
     </audio>
     <a href="/comments/{{this._id}}"><button>Make a comment</button></a>
@@ -20,7 +21,7 @@
     <p class="quote-card__text">{{text}}</p>
     </div>
     <div>
-    <p class="quote-card__name">{{userId.name}}</p>
+    <p class="quote-card__name">@{{userId.name}}</p>
     </div>
     {{/each}}
     </div>
