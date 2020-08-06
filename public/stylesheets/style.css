@@ -275,9 +275,11 @@ audio {
 /* NAVBAR STYLE */
 nav {
   width: 100%;
-  /* position: fixed; */
+  position: fixed;
   bottom: 0;
+  border-radius: 10px;
   left: 0;
+  height: 5rem;
   padding: 1rem 0;
   background-color: #fafbfa;
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
@@ -328,6 +330,7 @@ ul a {
   height: 450px;
   width: 100%;
   overflow: auto;
+  border-radius: 10px;
 }
 
 .posts {
@@ -491,10 +494,16 @@ form button {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-form--signup {
+.form--signup {
   background-color: black;
 }
-
+.align-text-center {
+  text-align: center;
+}
+.align-text-center > a{
+  color:black;
+  font-weight: bolder;
+}
 .form-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -532,4 +541,53 @@ form--signup {
   align-self: center;
   background-color: #e85b5b;
   color: #f5f5f5;
+}
+
+/* profiile image */
+.profile .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.profile .user__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: center;
+padding-left: 5.5rem;
+}
+
+.profile .user__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.profile .user h1 {
+  width: 100%;
+  margin: 15px 0 5px;
+}
+
+
+.profile .user h1 {
+  width: 100%;
+  margin: 15px 0 5px;
+}
+.edit-logout-container {
+  display: flex;
+  flex-direction: column;
+}
+.edit-link-container{
+  padding-left: 3rem; 
+  height:100%
+}
+.logout-container {
+  padding-left: 3rem;
+  align-self: flex-end;
 }

@@ -1,26 +1,25 @@
 <h1 class="title"> Welcome to The Consult. </h1>
+{{#if isUserLoggedIn}}
 <div class="container">
-  {{#if isUserLoggedIn}}
   <h2 class="subtitle"> Hello, {{ currentUserInfo.name }}. </h2>
   {{/if}}
   <ul>
     {{#if isUserLoggedIn}}
-    <div>
-      <a href="auth/logout"><i class="fa fa-sign-out"> Log out</i></a>
-      
-    </div>
+    
     {{else}}
     <li> <a href="/auth/signup"> Sign Up </a> </li>
     <li> <a href="/auth/login"> Log In </a> </li>
     {{/if}}
   </ul>
 
-<div class="scrolling">
-  <div class="posts">
-    {{#each songs}}
-    {{> songcardIndex}}
-    {{/each}}
+  <div class="scrolling">
+    <div class="posts">
+      {{#each songs}}
+      {{> songcardIndex}}
+      {{/each}}
+    </div>
   </div>
-</div>
-{{!-- posts --}}
-{{>navbar}}
+  {{!-- posts --}}
+  <br>
+
+  {{>navbar}}
