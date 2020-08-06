@@ -8,11 +8,18 @@ router.get('/comments/:_id',(req,res,next)=>{
     const {_id} = req.params
     Song.findById(_id)
     .populate({
+        path: 'comments.userId',
+        model: 'User'
+      })
+    /* .populate('comments.userId') */
+    /* .populate({
         path : 'comments' , 
         populate : {
-          path : 'userId'
+          path : 'userId',
+          model:'User'
         }
-      })
+      }) */
+
     .then((song) => {
         res.render('comments', {song})
         

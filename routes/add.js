@@ -66,19 +66,17 @@ router.post('/add', upload.single('songfile'), (req, res, next) => {
             }
         }
     );
-router.post('add/delete/:id', (req, res, next) => {
+/* router.post('delete/:id', (req, res, next) => {
     const userId = req.session.currentUser._id;
-    Song.deleteOne({
-            _id: userId
-        })
-        .then((user) => {
-            console.log(user);
-
-            res.redirect('/auth/signup');
+    const songId = req.params.id
+    Song.findByIdAndRemove(songId)
+        .then((deletedSong) => {
+         User.findByIdAndUpdate(userId, {$pull:{posts:songId}})   
+            res.render('profiles/userprofile');
         })
         .catch(err => console.log(err));
 });
-
+ */
 })// end of then
 
 module.exports = router;

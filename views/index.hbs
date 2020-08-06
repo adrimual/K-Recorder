@@ -26,6 +26,11 @@
 <audio controls>
   <source src="{{this.song}}" type='audio/mpeg'>
 </audio>
+{{#each this.comments}}
+{{userId.name}}
+{{text}}
+
+{{/each}}
 {{/each}}
 
 {{!-- posts --}}
