@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Kaushan_script";
+  src: url("../fonts/KaushanScript-Regular.ttf")
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 15px;
 }
@@ -5,11 +15,82 @@ html {
 body {
   line-height: 1.5;
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 1rem 'Montserrat', sans-serif;
+  background: url(../images/blue-background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  min-height: 100vh;
 }
 
-a {
-  color: #00B7FF;
+.header-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content>a {
+  text-decoration: none !important;
+}
+
+.animate-pop-in {
+  animation: pop-in 1s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+  opacity: 0;
+}
+
+.header-title {
+  color: black;
+  font-family: "Kaushan_script";
+  font-weight: bolder;
+  font-size: 10rem;
+}
+
+/* para ordenador */
+@media(max-width:812px) {
+  .header-title {
+    font-size: 2.6rem;
+  }
+}
+
+/* Animations */
+
+@keyframes fade-slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes rotate-up {
+  100% {
+    transform: rotateZ(-4deg);
+  }
+}
+
+.title {
+  font-family: "Kaushan_script";
+  font-size: 2.5rem;
+  font-weight: bolder;
 }
 
 pre {
@@ -37,7 +118,7 @@ pre {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
+  color: black;
   font-weight: bold;
   font-size: 1rem;
   border-radius: 10px;
