@@ -260,6 +260,11 @@ audio {
   list-style: none;
   margin-bottom: 1rem;
 }
+#log{
+  height:1px;
+  width: 1px;
+  font-size:1px;
+}
 
 #formats {
   margin-top: 0.5rem;
@@ -293,14 +298,9 @@ ul a {
   text-decoration: none;
   /* ferran quotecard */
 }
-<<<<<<< HEAD
-.quote-card{
-  width:100%;
-=======
 
 .quote-card {
   width: 100%;
->>>>>>> 62fd646466febc6d30568983f551ae101a9063ed
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,10 +315,5 @@ ul a {
   background-color: #fff;
   border-radius: 5px;
   -webkit-box-shadow: 0px 1px 2px 0px #2F4858;
-<<<<<<< HEAD
           box-shadow: 0px 1px 2px 0px #2F4858;
 }
-=======
-  box-shadow: 0px 1px 2px 0px #2F4858;
-}
->>>>>>> 62fd646466febc6d30568983f551ae101a9063ed
