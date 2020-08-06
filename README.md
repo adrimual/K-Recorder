@@ -1,7 +1,5 @@
 # The Consult
 
-​
-​
 
 ## Description
 
