@@ -34,7 +34,7 @@ router.get('/userprofile', isLoggedIn,(req,res,next) =>{
 
 //delete your own posts
 
-router.post('/delete/:id', (req,res,next) => {
+/* router.post('/delete/:id', (req,res,next) => {
   const { id } = req.params
   console.log(req.params)
   console.log("paramss de get ",id);
@@ -44,6 +44,20 @@ router.post('/delete/:id', (req,res,next) => {
   })
   .catch((err) => {console.log(err);
   })
+}); */
+
+router.get('/delete/:id', (req, res, next) => {
+  const userId = req.session.currentUser._id;
+  const songId = req.params.id
+  Song.findByIdAndRemove(songId)
+      .then((deletedSong) => {
+       User.findByIdAndUpdate(userId, {$pull:{posts:songId}}, {new : true})
+          .then((updatedUser)=>{
+            res.render('profiles/userprofile', {newUser:updatedUser} );
+
+          }) 
+      })
+      .catch(err => console.log(err));
 });
 
 

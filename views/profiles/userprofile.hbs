@@ -18,15 +18,21 @@
   </section> 
   <section>
    {{!--  {{newUser}} --}}
-  {{#each newUser.posts}}
+  {{!-- {{#each newUser.posts}}
   {{this.artist}}
   {{this.description}}
   {{this.title}}
   <audio controls>
     <source  src="{{this.song}}" type = 'audio/mpeg'>
     </audio>
-  {{/each}}
+    <a href="/profile/delete/{{this._id}}"><button>delete audio</button></a>
+  {{/each}} --}}
 
+
+  {{#each newUser.posts}}
+  {{>songcard}}
+  {{/each}}
+  
  {{!--  
   {{#each newUser.favouriteSongs}}
   {{this.artist}}
@@ -34,7 +40,7 @@
   {{this.title}}
   audio controls>
     <source  src="{{this.song}}" type = 'audio/mpeg'>
-
+  
   </audio>
   {{/each}}
  --}}

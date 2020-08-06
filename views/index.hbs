@@ -19,14 +19,21 @@
     {{/if}}
   </ul>
 </nav>
-{{#each songs}}
+{{!-- {{#each songs}}
 {{this.title}}
 {{this.description}}
 {{this.artist}}
 <audio controls>
   <source src="{{this.song}}" type='audio/mpeg'>
 </audio>
-{{/each}}
+{{#each this.comments}}
+{{userId.name}}
+{{text}}
 
+{{/each}}
+{{/each}} --}}
+{{#each songs}}
+{{> songcard}}
+{{/each}}
 {{!-- posts --}}
 {{>navbar}}

@@ -6,6 +6,10 @@ let Song = require('../models/song');
 
 router.get('/index', function (req, res, next) {
   Song.find()
+  .populate({
+    path: 'comments.userId',
+    model: 'User'
+  })
     .then(songs => {
       res.render('index', { songs })
     })
@@ -15,4 +19,9 @@ router.get('/index', function (req, res, next) {
   })
 });
 
+
+
+
 module.exports = router;
+
+
