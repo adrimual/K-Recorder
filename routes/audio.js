@@ -10,8 +10,8 @@ const isLoggedIn = (req, res, next) => {
     }  
   }
 
-router.get('/video',isLoggedIn,(req,res,next)=>{
-    res.render('song-display')
+router.get('/audio',isLoggedIn,(req,res,next)=>{
+    res.render('audio')
 })
 
 module.exports = router;

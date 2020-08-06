@@ -36,7 +36,4 @@ router.post('/comments/:_id',(req,res,next)=>{
     });
 })
 
-
-
-
 module.exports = router;
