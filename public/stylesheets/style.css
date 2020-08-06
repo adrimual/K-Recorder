@@ -25,6 +25,11 @@ body {
   min-height: 100vh;
 }
 
+h1 {
+  text-align: center;
+  /* font-size: 2rem; */
+}
+
 .header-content {
   height: 100%;
   display: flex;
@@ -56,7 +61,6 @@ body {
 }
 
 /* Animations */
-
 @keyframes fade-slide-down {
   0% {
     opacity: 0;
@@ -89,8 +93,19 @@ body {
 
 .title {
   font-family: "Kaushan_script";
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bolder;
+}
+
+.subtitle {
+  font-family: "Kaushan_script";
+  font-size: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 pre {
@@ -159,4 +174,30 @@ audio {
 #formats {
   margin-top: 0.5rem;
   font-size: 80%;
+}
+
+/* NAVBAR STYLE */
+nav {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 1rem 0;
+  background-color: #fafbfa;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
+}
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  list-style: none;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+ul a {
+  text-decoration: none;
 }
