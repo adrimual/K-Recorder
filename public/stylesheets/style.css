@@ -278,7 +278,7 @@ ul a {
 /* ferran quotecard */
 }
 .quote-card{
-  
+  width:100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
