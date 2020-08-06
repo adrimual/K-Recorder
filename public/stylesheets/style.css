@@ -361,7 +361,6 @@ ul a {
 .contenedor::-webkit-scrollbar-track {
   border-radius: 10px;
 }
-<<<<<<< HEAD
 audio{
   width:40%;
 }
@@ -384,7 +383,6 @@ audio{
   border:1px solid black;
   flex-direction: row;
 }
-=======
 
 /* LOGIN style */
 
@@ -535,4 +533,3 @@ form--signup {
   background-color: #e85b5b;
   color: #f5f5f5;
 }
->>>>>>> master
