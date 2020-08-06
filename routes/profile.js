@@ -19,9 +19,11 @@ router.get('/userprofile', isLoggedIn,(req,res,next) =>{
     let favToPrint = [];
     User.findById(userId)
     .populate({
-        path : 'favouriteSongs posts' , 
+        path : 'posts',
+        model:'Song',
         populate : {
-          path : 'userId'
+          path : 'comments.userId',
+          model: 'User'
         }
       })
     .then((user)=>{
