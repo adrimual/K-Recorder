@@ -92,6 +92,6 @@ app.use(function (err, req, res, next) {
   res.render("error");
 });
 //Default value for local title
-app.locals.title = 'K-Recorder'
+app.locals.title = 'The Consult'
 
 module.exports = app;
