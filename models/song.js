@@ -6,7 +6,13 @@ const songSchema = Schema ({
   userId: {type: Schema.Types.ObjectId, ref: "User"},
   title: {type: String},
   song: {type: String},
-  description:{type:String}
+  description:{type:String},
+  comments:[
+    {
+      userId :{type: Schema.Types.ObjectId, ref: 'User'},
+      text:{type:String}
+    }
+  ]
 
 },{
   timestamp:true
