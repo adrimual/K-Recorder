@@ -10,14 +10,17 @@
       
     </div>
     {{else}}
-    <li> <a href="/signup"> Sign Up </a> </li>
-    <li> <a href="/login"> Log In </a> </li>
+    <li> <a href="/auth/signup"> Sign Up </a> </li>
+    <li> <a href="/auth/login"> Log In </a> </li>
     {{/if}}
   </ul>
-</nav>
 
-{{#each songs}}
-{{> songcardIndex}}
-{{/each}}
+<div class="scrolling">
+  <div class="posts">
+    {{#each songs}}
+    {{> songcardIndex}}
+    {{/each}}
+  </div>
+</div>
 {{!-- posts --}}
 {{>navbar}}
