@@ -1,61 +1,39 @@
     <div>
-    <a href="#" onclick="history.go(-1)"><i class="fa fa-arrow-left"></i></a>
+    <a href="#" onclick="history.go(-1)"><img src="../images//go-back.png" alt=""></a>
     </div>
 
 <main class="profile">
   <section class="user">
     <div class="user__top">
       <img class="user__img" src="{{newUser.profilepic}}" alt="">
-      <a href="/edit/edit-profile">Edit profile</a>
+      <div class="edit-logout-container">
+        <div class="edit-link-container">
+          <a href="/edit/edit-profile"><img src="../images/edit.png" alt=""></a>
+        </div>
+        <div class="logout-container">
+          <a href="auth/logout"><img src="../images/logout.png" alt=""></a>
+        </div>
+      </div>
     </div>
     <h1>{{newUser.name}}</h1>
     <p>{{newUser.bio }}</p>
   </section>
- 
-  <section>
-   {{!--  {{newUser}} --}}
-  {{!-- {{#each newUser.posts}}
-  {{this.artist}}
-  {{this.description}}
-  {{this.title}}
-  <audio controls>
-    <source  src="{{this.song}}" type = 'audio/mpeg'>
-    </audio>
-    <a href="/profile/delete/{{this._id}}"><button>delete audio</button></a>
-  {{/each}} --}}
-
-
+<div class="scrolling">
+  <div class="posts">
   {{#each newUser.posts}}
   {{> songcard this}}
   {{/each}}
-  
- {{!--  
-  {{#each newUser.favouriteSongs}}
-  {{this.artist}}
-  {{this.description}}
-  {{this.title}}
-  audio controls>
-    <source  src="{{this.song}}" type = 'audio/mpeg'>
-  
-  </audio>
-  {{/each}}
- --}}
+  </div>
+</div>
   </section>
   {{#if error}}
   <div>
     <p>{{error}}</p>
   </div>
   {{/if}}
-  {{!-- <section class="profile__my-quotes">
-    {{#each quotes}}
-      {{>quoteCard this}}
-    {{/each}}
-  </section>
-  <section class="profile__fav-quotes">
-    {{#each userFav}}
-      {{>quoteCard this}}
-    {{/each}}
-  </section>
-  {{>navbar}} --}}
+<br>
+<br>
+<br>
+<br>
   {{>navbar}}
 </main>
