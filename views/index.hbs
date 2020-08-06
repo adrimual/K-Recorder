@@ -13,9 +13,10 @@
     <li> <a href="/login"> Log In </a> </li>
     {{/if}}
   </ul>
-  {{#each songs}}
-  {{> songcard}}
-  {{/each}}
-</div>
+</nav>
+
+{{#each songs}}
+{{> songcardIndex}}
+{{/each}}
 {{!-- posts --}}
 {{>navbar}}
