@@ -30,6 +30,7 @@ var searchRouter = require('./routes/search')
 var songRouter = require('./routes/song-display')
 var homeRouter = require('./routes/home')
 var addRouter = require('./routes/add');
+var commentsRouter = require('./routes/comments');
 
 var app = express();
 // view engine setup
@@ -78,6 +79,7 @@ app.use('/', searchRouter);
 app.use('/', songRouter);
 app.use('/', homeRouter)
 app.use('/', addRouter);
+app.use('/', commentsRouter);
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));

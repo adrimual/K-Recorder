@@ -1,0 +1,14 @@
+
+
+<audio controls>
+  <source src="{{song.song}}" type='audio/mpeg'>
+</audio>
+<form action="/comments/{{song._id}}" method = 'post'>
+    <textarea name = 'text' placeholder ='Do a response'>
+        <button type= 'submit'>Submit</button>
+</form>
+
+{{#each song.comments}}
+{{this.userId.name}}
+{{this.text}}
+{{/each}}
