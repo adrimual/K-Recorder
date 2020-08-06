@@ -19,7 +19,7 @@
     {{/if}}
   </ul>
 </nav>
-{{#each songs}}
+{{!-- {{#each songs}}
 {{this.title}}
 {{this.description}}
 {{this.artist}}
@@ -31,7 +31,9 @@
 {{text}}
 
 {{/each}}
+{{/each}} --}}
+{{#each songs}}
+{{> songcard}}
 {{/each}}
-
 {{!-- posts --}}
     {{>navbar}}
