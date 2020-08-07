@@ -26,11 +26,12 @@
 
         <label for=''>Bio</label>
         <input type='text' name='bio' value="{{newUser.bio}}">
-
-        <button type='submit'>Edit profile</button>
+<div class="edit-delete">
+    <button type='submit'>Edit profile</button>
     </form>
     <form action="/edit/delete/{{newUser._id}}" method="post" class="delete-profile">
-        <button>Delete profile</button>
+        <button >Delete profile</button>
     </form>
+</div>
     {{>navbar}}
 </main>

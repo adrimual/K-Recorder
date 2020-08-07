@@ -1,48 +1,28 @@
 <div>
-<a href="#" onclick="history.go(-1)"><i class="fa fa-arrow-left"></i></a>
+<a href="#" onclick="history.go(-1)"><img src="../images//go-back.png" alt=""></a>
 </div>
-<h1>K-Recorder</h1>
-{{!-- Here will go the youtube iFrame --}}
+<main class="audio-main">
+<h1>The Consult </h1>
 
 {{!-- Here goes the recorder --}}
 
 <div class="record-container">
-<div style="max-width: 28em;">
-		<p>Convert recorded audio to:</p>
-		<select id="encodingTypeSelect">
-		  <option value="wav">Waveform Audio (.wav)</option>
-		  <option value="mp3">MP3 (MPEG-1 Audio Layer III) (.mp3)</option>
-		  <option value="ogg">Ogg Vorbis (.ogg)</option>
-		</select>
-		<div id="controls">
-			<button id="recordButton">Record</button>
-			<button id="stopButton" disabled>Stop</button>
-		</div>
-		<div id="formats"></div>
-		<pre>Log</pre>
-		<pre id="log"></pre>
+	<div style="max-width: 28em;">
+			<p>Convert recorded audio to:</p>
+			<select id="encodingTypeSelect">
+			<option value="mp3">MP3 (MPEG-1 Audio Layer III) (.mp3)</option>
+			<option value="wav">Waveform Audio (.wav)</option>
+			</select>
+			<div id="controls">
+				<button id="recordButton">Record</button>
+				<button id="stopButton" disabled>Stop</button>
+			</div>
+			<div id="formats"></div>
+			<pre id="log"></pre>
 
-		<pre>Recordings</pre>
-		<ol id="recordingsList"></ol>
+			<pre>Recordings</pre>
+			<ol id="recordingsList"></ol>
 	</div>
-
-    {{!-- <div id="controls">
-        <button id="recordButton">Record</button>
-        <button id="stopButton" disabled>Stop</button>
-    </div>
-    <p>Convert audio to:</p>
-    <select id="encodingTypeSelect">
-        <option value="mp3">MP3 (MPEG-1 Audio Layer III) (.mp3)</option>
-        <option value="wav">Waveform Audio (.wav)</option>
-    </select>
-    <pre>Recordings</pre>
-    <ol id="recordingsList"></ol>
 </div>
-<div id="formats"></div>
-<pre>Log</pre>
-<pre id="log" style="color:white; font-size: 0.1px"></pre>
-
-<pre>Recordings</pre>
-<ol id="recordingsList"></ol>
-</div> --}}
 {{>navbar}}
+</main>
