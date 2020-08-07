@@ -52,11 +52,11 @@ h1 {
 }
 
 /* para ordenador */
-@media(max-width:812px) {
-  .header-title {
-    font-size: 2.6rem;
-  }
-}
+   /*  @media(max-width:812px) {
+      .header-title {
+        font-size: 2.6rem;
+      }
+    } */
 
 /* Animations */
 @-webkit-keyframes bounce-in-top {
@@ -341,7 +341,14 @@ ul a {
   justify-content: center;
   align-items:center;
 }
-
+/* @media(min-width:770px) {
+  .quote-card {
+    width: 300px;
+  }
+  .quote-box{
+    width:300px;
+  }
+} */
 .scrolling {
   height: 450px;
   width: 100%;
@@ -400,11 +407,19 @@ ul a {
   display: flex;
   /* border: 1px solid black; */
   flex-direction: column;
-  width:600px;
+/*   width:600px; */
  /*  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
           border: outset 4px white;
           border-radius: 1%; */
+  text-align: center;
+  justify-content: center;
 }
+/* @media(min-width:812px) {
+  .comments-section {
+    width: 600px;
+  }
+} */
+
 
 .comments-section:last-child {
   border-bottom: none;
@@ -607,11 +622,11 @@ form button {
   justify-content: flex-start;
   align-content: flex-start;
   display: flex;
-  width: 300px;
+  /* width: 300px; */
   box-shadow: 7px 7px 4px 0px rgba(70, 64, 64, 0.7);
           border: outset 4px #eaeaea;
           border-radius: 1%;
-  width: 100%;
+  /* width: 100%; */
   margin-bottom: 10px;
 }
 
