@@ -28,7 +28,7 @@ var authRouter = require("./routes/auth");
 var indexRouter = require("./routes/index");
 var profileRouter = require('./routes/profile');
 var editprofileRouter = require('./routes/edit-profile');
-var searchRouter = require('./routes/search')
+// var searchRouter = require('./routes/search')
 var songRouter = require('./routes/audio')
 var homeRouter = require('./routes/home')
 var addRouter = require('./routes/add');
@@ -77,7 +77,7 @@ app.use("/auth", authRouter);
 app.use("/", indexRouter);
 app.use('/profile', profileRouter);
 app.use('/edit', editprofileRouter);
-app.use('/', searchRouter);
+// app.use('/', searchRouter);
 app.use('/', songRouter);
 app.use('/', homeRouter)
 app.use('/', addRouter);

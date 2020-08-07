@@ -11,14 +11,6 @@ router.get('/comments/:_id',(req,res,next)=>{
         path: 'comments.userId',
         model: 'User'
       })
-    /* .populate('comments.userId') */
-    /* .populate({
-        path : 'comments' , 
-        populate : {
-          path : 'userId',
-          model:'User'
-        }
-      }) */
 
     .then((song) => {
         res.render('comments', {song})
