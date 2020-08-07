@@ -1,30 +1,21 @@
     <div>
-    <a href="#" onclick="history.go(-1)"><i class="fa fa-arrow-left"></i></a>
+    <a href="#" onclick="history.go(-1)"><img src="../images/go-back.png" alt=""></a>
     </div>
 <main>
-  <div class="private-header">
-    <h1>Add Song</h1>
-  </div>
+    <h1>Consult here</h1>
   <form action='/add' method='POST' class="add-quote" enctype="multipart/form-data">
-  <div>
-   <label for=''>Song</label>
-    <label class="custom-file-upload">
+      <label for=''>Audio</label>
+      <label class="custom-file-upload">
       <input id="up-image" type="file" name='songfile'>
-      <span>Upload song</span>
-    </label>
-    </div>
-    <div>
-     <label for="descripton-input"> Description </label>
-        <input type="text" name="description" id="description-input" placeholder="">
-    </div>
-    <div>
-    <label for="title-input"> Title </label>
-    <input type="text" name="title" id="title-input" placeholder="">
-    </div>
-    <div>
-     <label for="artist-input"> Artist</label>
-    <input type="text" name="artist" id="artist-input" placeholder="">
-    </div>
+      <span>Upload audio</span>
+      </label>
+      <label for="descripton-input"> Description </label>
+      <input type="text" name="description" id="description-input" placeholder="">
+      <label for="title-input"> Title </label>
+      <input type="text" name="title" id="title-input" placeholder="">
+      <label for="artist-input"> Artist</label>
+      <input type="text" name="artist" id="artist-input" placeholder="">
+
     <button type='submit'>Submit</button>
   </form>
   
