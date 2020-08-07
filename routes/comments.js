@@ -37,7 +37,8 @@ router.post('/comments/:_id',(req,res,next)=>{
 
     Song.findByIdAndUpdate(_id, {$push:{comments:newComment}} , {new : true} )
     .then((song) => {
-        res.render('comments', {song})
+        res.redirect('/index')
+        /* res.render('comments', {song}) */
     }).catch((err) => {
         console.log(err)
     });
