@@ -216,7 +216,7 @@ pre {
   min-width: 2rem;
   border: none;
   border-radius: 0.15rem;
-  background: #ed341d;
+  background: #0c6c92ad;
   margin-left: 2px;
   box-shadow: inset 0 -0.15rem 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
@@ -232,7 +232,7 @@ pre {
 #controls>button:hover,
 button:focus {
   outline: none;
-  background: #c72d1c;
+  background: #1cc739;
 }
 
 #controls>button:active {
@@ -260,7 +260,19 @@ audio {
   list-style: none;
   margin-bottom: 1rem;
 }
-
+#submit-btn {
+  margin-top: 3rem;
+}
+.record-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+.audio-main>h1{
+  font-size: 5rem;
+}
 #log {
   height: 1px;
   width: 1px;
@@ -364,35 +376,41 @@ ul a {
 .contenedor::-webkit-scrollbar-track {
   border-radius: 10px;
 }
-audio{
-  width:40%;
-}
 
-.quote-info{
-  display:flex;
+.quote-info {
+  display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
 }
+
 /* tweets */
-.quote-creator-info,.quote-buttons{
+.quote-creator-info,
+.quote-buttons {
   flex-direction: column;
-  display:flex;
+  display: flex;
 }
-.comments-section{
-  display:flex;
-  border:1px solid black;
+
+.comments-section {
+  display: flex;
+  border: 1px solid black;
   flex-direction: column;
+<<<<<<< HEAD
   width:60%;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
           border: outset 4px white;
           border-radius: 1%;
+=======
+  width: 60%;
+>>>>>>> 308f261af9ca61411bfd95058fcd60c406494d99
 }
-.comments-section:last-child{
+
+.comments-section:last-child {
   border-bottom: none;
 }
-.box{
-  display:flex;
+
+.box {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -404,8 +422,9 @@ audio{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
 }
+
 main h1 {
   color: #4a4a4a;
 }
@@ -470,7 +489,7 @@ form input {
 form button {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  /* display: flex; */
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -480,7 +499,6 @@ form button {
   color: #f3f3f3;
   font-weight: bold;
   padding: 10px;
-  margin-top: 30px;
   width: 200px;
   outline: none;
   border: none;
@@ -489,16 +507,20 @@ form button {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+
 .form--signup {
   background-color: black;
 }
+
 .align-text-center {
   text-align: center;
 }
-.align-text-center > a{
-  color:black;
+
+.align-text-center>a {
+  color: black;
   font-weight: bolder;
 }
+
 .form-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -548,6 +570,7 @@ form button {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+
 .profile .user__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -555,41 +578,46 @@ form button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: center;
-padding-left: 5.5rem;
+  padding-left: 5.5rem;
 }
-.user> p{
+
+.user>p {
   text-align: center;
 }
 
-.comments-section > img{
-  width:35px;
-  height:35px;
+.comments-section>img {
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
-  border:2px solid rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
 }
-.quote-info >img{
-  width:60px;
-  height:60px;
+
+.quote-info>img {
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  border:2px solid rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
 }
-.quote-box{
- padding:1.5rem;
+
+.quote-box {
+  padding: 1.5rem;
   justify-content: flex-start;
   align-content: flex-start;
-  display:flex;
+  display: flex;
   width: 300px;
   border-bottom: 1px solid black;
   width: 100%;
 }
-.image-style>img{
-  width:35px;
-  height:35px;
+
+.image-style>img {
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
-  border:1.5px solid rgb(0, 0, 0);
+  border: 1.5px solid rgb(0, 0, 0);
   margin-right: 2rem;
 }
-.quote-card__name{
+
+.quote-card__name {
   font-weight: bolder;
 }
 
@@ -599,6 +627,7 @@ padding-left: 5.5rem;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
+
 .profile .user h1 {
   width: 100%;
   margin: 15px 0 5px;
@@ -609,28 +638,45 @@ padding-left: 5.5rem;
   width: 100%;
   margin: 15px 0 5px;
 }
+
 .edit-logout-container {
   display: flex;
   flex-direction: column;
 }
-.edit-link-container{
-  padding-left: 3rem; 
-  height:100%
+
+.edit-link-container {
+  padding-left: 3rem;
+  height: 100%
 }
+
 .logout-container {
   padding-left: 3rem;
   align-self: flex-end;
 }
-
-main > h1 {
+.delete-profile{
+  margin-top: 0;
+}
+main>h1 {
   font-family: "Kaushan_script";
   font-size: 3rem;
   color: black;
   font-weight: bolder;
+  margin-top: 2rem;
 }
-form >label {
+form>label {
   font-weight: bold;
 }
-main > p{
+main>p {
   text-align: center;
 }
+/* edit and delete buttons from edit-profile */
+.edit-delete {
+  display: flex;
+  margin-bottom: 5rem;
+  width: 450px;
+  padding-top: 2rem;
+}
+.delete-button {
+  margin-bottom: 15px;
+}
+/* comentario random */
