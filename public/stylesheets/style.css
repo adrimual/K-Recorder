@@ -395,14 +395,10 @@ ul a {
   display: flex;
   border: 1px solid black;
   flex-direction: column;
-<<<<<<< HEAD
-  width:60%;
+  width:600px;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
           border: outset 4px white;
           border-radius: 1%;
-=======
-  width: 60%;
->>>>>>> 308f261af9ca61411bfd95058fcd60c406494d99
 }
 
 .comments-section:last-child {
