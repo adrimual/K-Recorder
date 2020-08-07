@@ -9,6 +9,7 @@ const hbs = require("hbs");
 const mongoose = require("mongoose");
 const session = require("express-session");
 const MongoStore = require("connect-mongo")(session);
+
 mongoose
   .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
@@ -22,6 +23,7 @@ mongoose
   .catch((err) => {
     console.error("Error connecting to mongo", err);
   });
+  
 var authRouter = require("./routes/auth");
 var indexRouter = require("./routes/index");
 var profileRouter = require('./routes/profile');
