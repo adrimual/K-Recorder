@@ -22,7 +22,7 @@ router.get('/userprofile', isLoggedIn,(req,res,next) =>{
         path : 'posts',
         model:'Song',
         populate : {
-          path : 'comments.userId',
+          path : 'comments.userId userId',
           model: 'User'
         }
       })

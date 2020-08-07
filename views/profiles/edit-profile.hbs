@@ -1,11 +1,11 @@
 <div>
-<a href="#" onclick="history.go(-1)"><img src="../images//go-back.png" alt=""></a>
+<a href="#" onclick="history.go(-1)"><img src="/images/go-back.png" alt=""></a>
 </div>
 <main class="profile">
     <div class="private-header">
         {{!-- <button id="back-arrow"><img src="/images/arrow.svg" alt=""></button> --}}
         <h1>Edit your profile</h1>
-        <a href="/routes/auth" class="logout-btn"><img src="/images/logout.svg" alt=""></a>
+        <a href="/auth/logout" class="logout-btn"><img src="/images/logout.png" alt="logout"></a>
     </div>
     <form action="/edit/edit-profile" method="post" enctype="multipart/form-data">
         <img class="user__img" src="{{newUser.profilepic}}" alt="">

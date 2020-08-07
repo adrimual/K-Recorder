@@ -6,7 +6,7 @@ const userSchema = Schema ({
   email: {type: String, required: true},
   password: {type: String, required: true},
   posts:[{type: Schema.Types.ObjectId, ref: "Song"}],
-  profilepic: {type: String, default: "../public/images/avatar.png"},
+  profilepic: {type: String, default: "/images/avatar.png"},
   favouriteSongs: [{type: Schema.Types.ObjectId, ref: "Song"}],
   bio:{type:String}
 })

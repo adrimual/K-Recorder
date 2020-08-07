@@ -54,7 +54,7 @@ router.post('/add', upload.single('songfile'), (req, res, next) => {
                             User.findByIdAndUpdate(userId,{$push:{posts:song._id}})
                             .then((updatedUser)=>{
                             
-                            res.render('index');
+                            res.redirect('/index');
                                 
                             })
                         })

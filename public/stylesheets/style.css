@@ -338,6 +338,8 @@ ul a {
   box-shadow: 0px 1px 2px 0px #2F4858;
   padding-bottom: 3rem;
   padding-top: 2rem;
+  justify-content: center;
+  align-items:center;
 }
 
 .scrolling {
@@ -384,6 +386,7 @@ ul a {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  width:100%;
 }
 
 /* tweets */
@@ -395,18 +398,20 @@ ul a {
 
 .comments-section {
   display: flex;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   flex-direction: column;
   width:600px;
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+ /*  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
           border: outset 4px white;
-          border-radius: 1%;
+          border-radius: 1%; */
 }
 
 .comments-section:last-child {
   border-bottom: none;
 }
-
+.comments-textarea >textarea{
+  width:100%;
+}
 .box {
   display: flex;
   justify-content: center;
@@ -603,8 +608,11 @@ form button {
   align-content: flex-start;
   display: flex;
   width: 300px;
-  border-bottom: 1px solid black;
+  box-shadow: 7px 7px 4px 0px rgba(70, 64, 64, 0.7);
+          border: outset 4px #eaeaea;
+          border-radius: 1%;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .image-style>img {
@@ -613,6 +621,9 @@ form button {
   border-radius: 50%;
   border: 1.5px solid rgb(0, 0, 0);
   margin-right: 2rem;
+}
+.quote-info >audio{
+  width:40%;
 }
 
 .quote-card__name {
