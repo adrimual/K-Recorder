@@ -384,6 +384,9 @@ audio{
   border:1px solid black;
   flex-direction: column;
   width:60%;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+          border: outset 4px white;
+          border-radius: 1%;
 }
 .comments-section:last-child{
   border-bottom: none;
