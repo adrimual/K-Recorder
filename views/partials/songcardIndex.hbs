@@ -17,19 +17,24 @@
       <source src="{{this.song}}" type='audio/mpeg'>
       </audio>
     <div class ='quote-buttons'>
-      <a href="/comments/{{this._id}}"><button style = 'margin-bottom : 10px'>Make a comment</button></a>
+      <a href="/comments/{{this._id}}"><img  src="../images/comment.png" alt=""></a>
     </div>
     </div>
-      <img src="./../../public/images/comment.png" alt="">
       <div class = 'box'>
       <div class = 'comments-section'>
       {{#each this.comments}}
+      <div class = 'quote-box'>
+      <div class ='image-style'>
+      <img src="{{userId.profilepic}}" alt="">
+      </div>
+      <div class ='display-container'>
       <div>
+      <p class="quote-card__name">@{{userId.name}}</p>
+      </div>
+        <div>
       <p class="quote-card__text">{{text}}</p>
       </div>
-      <div>
-        <img src="{{userId.profilepic}}" alt="">
-      <p class="quote-card__name">@{{userId.name}}</p>
+      </div>
       </div>
       {{/each}}
       </div>

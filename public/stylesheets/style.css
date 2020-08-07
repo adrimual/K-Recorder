@@ -381,11 +381,12 @@ audio{
 }
 .comments-section{
   display:flex;
-  align-items: center;
-  justify-content: center;
   border:1px solid black;
   flex-direction: column;
   width:60%;
+}
+.comments-section:last-child{
+  border-bottom: none;
 }
 .box{
   display:flex;
@@ -569,6 +570,37 @@ form button {
 padding-left: 5.5rem;
 }
 
+.comments-section > img{
+  width:35px;
+  height:35px;
+  border-radius: 50%;
+  border:2px solid rgb(0, 0, 0);
+}
+.quote-info >img{
+  width:60px;
+  height:60px;
+  border-radius: 50%;
+  border:2px solid rgb(0, 0, 0);
+}
+.quote-box{
+ padding:1.5rem;
+  justify-content: flex-start;
+  align-content: flex-start;
+  display:flex;
+  width: 300px;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+.image-style>img{
+  width:35px;
+  height:35px;
+  border-radius: 50%;
+  border:1.5px solid rgb(0, 0, 0);
+  margin-right: 2rem;
+}
+.quote-card__name{
+  font-weight: bolder;
+}
 
 .profile .user__img {
   width: 150px;
