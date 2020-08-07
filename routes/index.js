@@ -7,7 +7,7 @@ let Song = require('../models/song');
 router.get('/index', function (req, res, next) {
   Song.find()
   .populate({
-    path: 'comments.userId',
+    path: 'comments.userId userId',
     model: 'User'
   })
     .then(songs => {

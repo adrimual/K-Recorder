@@ -7,6 +7,7 @@
   --}}
   <div class = 'quote-card'>
     <div class = 'quote-info'>
+      <img src="{{userId.profilepic}}" alt="">
       <div class = 'quote-creator-info'>
       <p class="quote-card__title">{{this.title}}</p>
       <p class="quote-card__artist">{{this.artist}}</p>
@@ -23,13 +24,12 @@
       
       <div class = 'comments-section'>
       {{#each this.comments}}
-      <div>
       <p class="quote-card__text">{{text}}</p>
-      </div>
-      <div>
+      <img src="{{userId.profilepic}}" alt="">
       <p class="quote-card__name">@{{userId.name}}</p>
-      </div>
+      
       {{/each}}
+      </div>
   </div>
 </div>
 

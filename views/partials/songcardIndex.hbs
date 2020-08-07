@@ -25,9 +25,40 @@
     <p class="quote-card__name">@{{userId.name}}</p>
     </div>
     {{/each}}
+    <div class = 'quote-info'>
+      <img src="{{userId.profilepic}}" alt="">
+      <div class = 'quote-creator-info'>
+      <p class="quote-card__title">{{this.title}}</p>
+      <p class="quote-card__artist">{{this.artist}}</p>
+      <p class="quote-card__description">{{this.description}}</p>
+      </div>
+      <audio controls>
+      <source src="{{this.song}}" type='audio/mpeg'>
+      </audio>
+    <div class ='quote-buttons'>
+      <a href="/comments/{{this._id}}"><img  src="../images/comment.png" alt=""></a>
     </div>
     </div>
+      <div class = 'box'>
+      <div class = 'comments-section'>
+      {{#each this.comments}}
+      <div class = 'quote-box'>
+      <div class ='image-style'>
+      <img src="{{userId.profilepic}}" alt="">
+      </div>
+      <div class ='display-container'>
+      <div>
+      <p class="quote-card__name">@{{userId.name}}</p>
+      </div>
+        <div>
+      <p class="quote-card__text">{{text}}</p>
+      </div>
+      </div>
+      </div>
+      {{/each}}
+      </div>
   </div>
+</div>
 {{!-- 
 {{this.title}}
 {{this.description}}
