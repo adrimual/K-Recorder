@@ -389,22 +389,7 @@ audio{
 
 /* LOGIN style */
 
-/* .form-container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
 
-/* main {
-  padding: 20px 20px 48px;
-  margin-bottom: 20px;
-  max-width: 525px;
-  margin: 0 auto 20px;
-  background-color: rgba(106, 233, 233, 0.514);
-  height: 600px;
-  align-self: center;
-} */
 .main-container {
   display: flex;
   flex-direction: column;
@@ -481,7 +466,7 @@ form button {
   justify-content: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #e10100ad;
+  background-color: #0c6c92ad;
   color: #f3f3f3;
   font-weight: bold;
   padding: 10px;
@@ -562,7 +547,9 @@ form button {
   justify-content: center;
 padding-left: 5.5rem;
 }
-
+.user> p{
+  text-align: center;
+}
 .profile .user__img {
   width: 150px;
   height: 150px;
@@ -590,4 +577,17 @@ padding-left: 5.5rem;
 .logout-container {
   padding-left: 3rem;
   align-self: flex-end;
+}
+
+main > h1 {
+  font-family: "Kaushan_script";
+  font-size: 3rem;
+  color: black;
+  font-weight: bolder;
+}
+form >label {
+  font-weight: bold;
+}
+main > p{
+  text-align: center;
 }
