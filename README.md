@@ -94,7 +94,7 @@ Songs
 ## Project structure
 
 ```
-K-Recorder/
+The-Consult/
 ├── .gitignore
 ├── app.js
 ├── bin
@@ -157,17 +157,12 @@ K-Recorder/
 
 ### Git
 
-The url to your repository and to your deployed project
-​
 [Repository Link](https://gist.github.com/ross-u/8f91ec13aeaf35a1ba7603848284703f)
 ​
+### Deploy
 [Deploy Link](https://k-recorder.herokuapp.com/)
 ​
-​
-​
-
 ### Prezi
-
 The link to the presentation
 ​
 [Prezi link](https://prezi.com/lxa9rptr8rlf/?utm_campaign=share&utm_medium=copy)
